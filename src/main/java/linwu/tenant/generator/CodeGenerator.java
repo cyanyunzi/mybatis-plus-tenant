@@ -38,11 +38,11 @@ public class CodeGenerator {
 
     // 数据源配置
     DataSourceConfig dsc = new DataSourceConfig();
-    dsc.setUrl("jdbc:mysql://localhost:3306/tenant1?characterEncoding=utf-8&serverTimezone=Asia/Shanghai");
+    dsc.setUrl("jdbc:mysql://localhost:3306/mybatis-plus-tenant?characterEncoding=utf-8&serverTimezone=Asia/Shanghai");
     // dsc.setSchemaName("public");
     dsc.setDriverName("com.mysql.jdbc.Driver");
-    dsc.setUsername("root1");
-    dsc.setPassword("root1");
+    dsc.setUsername("root");
+    dsc.setPassword("root");
     mpg.setDataSource(dsc);
 
     // 包配置
@@ -125,7 +125,7 @@ public class CodeGenerator {
   }
 
   public static String tables(){
-    return Lists.newArrayList("product").stream().collect(Collectors.joining(","));
+    return Lists.newArrayList("plus_tenant").stream().collect(Collectors.joining(","));
   }
 
   public static String modelName(){

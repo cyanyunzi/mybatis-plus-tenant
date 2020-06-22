@@ -102,6 +102,12 @@
             <version>2.3.30</version>
         </dependency>
         <!--代码生成-->
+
+        <dependency>
+            <groupId>p6spy</groupId>
+            <artifactId>p6spy</artifactId>
+            <version>3.8.5</version>
+        </dependency>
     </dependencies>
 
 </project>

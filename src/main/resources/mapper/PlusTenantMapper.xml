@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="linwu.tenant.mapper.common.PlusTenantMapper">
+
+    <select id="selectListByQuery" resultType="linwu.tenant.entity.common.PlusTenant">
+        select * from plus_tenant
+        where
+        age>20
+    </select>
+    <select id="selectOneByQuery" resultType="linwu.tenant.entity.common.PlusTenant">
+        select * from plus_tenant
+        where
+        age=20
+    </select>
+</mapper>

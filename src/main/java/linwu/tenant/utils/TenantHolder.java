@@ -11,7 +11,7 @@ public class TenantHolder {
   public static String getTenantId() {
     return threadLocal.get();
   }
-
+  
   public static void setTenantId(String tenantId) {
     threadLocal.set(tenantId);
   }
